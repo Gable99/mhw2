@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+  font-size: 15px;
+  background-color: cornsilk;
+}
+@media (max-width: 650px) {
+  body {
+    font-size: 10px;
+  }
+}
+header{
+  background-image: url(https://wallpapercave.com/wp/wp4016023.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'chango', sans-serif;
+  letter-spacing: 1px;
+  color: cornsilk;
+}
+@media (max-width: 650px) {
+  header {
+    height: 300px;
+  }
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+header nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a{
+  cursor: pointer;
+  font-size: 1em;
+  border: 1.5px solid cornsilk;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+a:hover{
+  background-color: cornsilk;
+  color: black;
+}
+@media (max-width: 650px) {
+  .link_utente, .link_sito {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header h1{
+  line-height: 1.5;
+}
+#title{
+  color: greenyellow;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+#subtitle{
+  text-align: center;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: 'oxygen', sans-serif;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 70%;
+  height: 300px;
+}
+@media (max-width: 650px) {
+  .info {
+    width: 90%;
+  }
+}
+.info img{
+  width: 50%;
+  height: 100%;
+}
+.info .testo{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 5%;
+  text-align: center;
+  font-size: 1.5em;
+}
+.info .titolo{
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 2;
+}
+footer{
+  height: 100px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25em;
+  color: rgba(255, 255, 255, .7);
+  font-family: 'Lora', serif;
+}
+footer img{
+  height: 100%;
+}
+#temp{
+  width: 33%;
+  display: flex;
+  text-align: center;
+}
+#me{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: center;
+}
+
+/* mhw2 */
+.hidden{
+  display: none;
+}
+#mhw2{
+  margin: 0 15% 25px 15%;
+  font-family: 'oxygen', sans-serif;
+}
+@media (max-width: 650px) {
+  #mhw2 {
+    margin: 0 5% 25px 5%;
+  }
+}
+#griglia, #favorites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+#griglia .film{
+  width: 300px;
+  margin-bottom: 50px;
+}
+#favorites div{
+  width: 200px;
+}
+#griglia h2, #favorites h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+#griglia img{
+  width: 100%;
+  height: 300px;
+}
+#favorites img{
+  width: 100%;
+  height: 200px;
+}
+#griglia h3, button{
+  cursor: pointer;
+}
+button{
+  background-color: cornsilk;
+}
+#preferiti h1, #barra h1{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2em;
+}
+#barra{
+  display: flex;
+  justify-content: space-between; 
+}
+#ricerca{
+  display: flex;
+  align-items: center;
+}
